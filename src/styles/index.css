@@ -63,7 +63,7 @@ main {
 .netflix {
   display: flex;
   gap: 10px;
-  transition: transform 2s ease-in-out 0.15s;
+  transition: transform 1.5s ease-in-out 0.15s;
 }
 
 .hidden {
