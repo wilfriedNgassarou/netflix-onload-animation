@@ -1,0 +1,151 @@
+.n {
+  div{
+    transform: scaleY(1);
+    overflow: hidden;
+
+    //long left
+    &:nth-of-type(1) {
+      z-index: 8;
+    }
+
+    // diagonale
+    &:nth-of-type(2) {
+      left: 10px;
+      top: 0;
+      transform: skewX(22deg);
+      z-index: 9;
+      
+    }
+
+    //long right
+    &:nth-of-type(3) {
+      z-index: 7;
+      left: 20px;
+      transform: scaleY(1);
+    }
+  }
+}
+
+.e {
+  div{
+
+    // long
+    &:nth-of-type(1) {
+      transform-origin: bottom;
+      z-index: 12;
+    }
+
+    // larg top
+    &:nth-of-type(2) {
+      transform-origin: left;
+      z-index: 13;
+    }
+
+    // larg middle
+    &:nth-of-type(3) {
+      top: calc(25px - 5px);
+      transform-origin: left;
+      z-index: 11;
+    }
+
+    // larg bottom
+    &:nth-of-type(4) {
+      top: 40px;
+      transform-origin: right;
+      z-index: 10;
+    }
+  }
+}
+
+.t {
+  div{
+
+    // larg
+    &:nth-of-type(1) {
+      transform-origin: left;
+      z-index: 15;
+    }
+
+    // long
+    &:nth-of-type(2) {
+      left: 10px;
+      transform-origin: top;
+      z-index: 14;
+    }
+  }
+}
+
+.f {
+  div{
+    
+    // long
+    &:nth-of-type(1) {
+      transform-origin: top;
+      z-index: 17;
+    }
+
+    // larg top
+    &:nth-of-type(2) {
+      transform-origin: left;
+      z-index: 18;
+    }
+
+    // larg middle
+    &:nth-of-type(3) {
+      top: 20px;
+      transform-origin: left;
+      z-index: 16;
+    }
+  }
+}
+
+.l {
+  width: 25px;
+
+  div{
+
+    // long
+    &:nth-of-type(1) {
+      transform-origin: top;
+      z-index: 19;
+    }
+
+    // larg
+    &:nth-of-type(2) {
+      top: 40px;
+      transform-origin: left;
+      z-index: 20;
+    }
+  }
+}
+
+.i {
+  width: 10px;
+
+  //long
+  div {
+    transform-origin: bottom;
+    z-index: 21;
+  }
+}
+
+.x {
+  overflow: hidden;
+
+  div{
+    left: 10px;
+
+    // long left
+    &:nth-of-type(1) {
+      z-index: 23;
+      transform: skewX(-22deg) translateY(100%);
+      
+    }
+    
+    //long right
+    &:nth-of-type(2) {
+      z-index: 21;
+      transform: skewX(22deg) translateY(-100%);
+    }
+  }
+}
